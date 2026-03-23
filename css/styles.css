@@ -11466,6 +11466,14 @@ aside {
   text-transform: uppercase;
 }
 
+.pricing-card-featured .pricing-label {
+  display: inline-block;
+  max-width: 100%;
+  padding-right: 6.5rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .deal-badge {
   top: 1.2rem;
   right: 1.2rem;
