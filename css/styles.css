@@ -11555,6 +11555,8 @@ aside {
 
 .pricing-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 2rem 1.6rem;
   border-radius: 1.7rem;
@@ -11611,9 +11613,20 @@ aside {
   opacity: 0.75;
 }
 
+.pricing-card h3 {
+  min-height: 3.2rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.2;
+}
+
+.pricing-card > p {
+  min-height: 4.9rem;
+}
+
 .pricing-list {
   padding-left: 0;
   list-style: none;
+  margin-bottom: 1.5rem;
 }
 
 .pricing-list li {
@@ -11633,6 +11646,10 @@ aside {
 
 .pricing-card-featured .pricing-list li::before {
   color: #d5f1c8;
+}
+
+.pricing-card .btn {
+  margin-top: auto;
 }
 
 .market-card {
