@@ -11748,11 +11748,65 @@ aside {
   color: #fff;
 }
 
+.footer-shell {
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at top right, rgba(157, 187, 109, 0.14), transparent 18%),
+    rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+.footer-kicker {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  color: rgba(213, 241, 200, 0.9);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-brand p,
+.footer-contact p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.footer-badges span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 1.5rem;
   justify-content: flex-start;
+}
+
+.footer-links-stack {
+  flex-direction: column;
+  gap: 0.85rem;
 }
 
 .footer-links a {
@@ -11762,6 +11816,30 @@ aside {
 
 .footer-links a:hover {
   color: #fff;
+}
+
+.footer-contact a,
+.footer-bottom-link {
+  color: #d5f1c8;
+  text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-bottom-link:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
 }
 
 .floating-wa {
@@ -11868,5 +11946,14 @@ aside {
 
   .footer-links {
     flex-direction: column;
+  }
+
+  .footer-shell {
+    padding: 1.35rem;
+    border-radius: 1.5rem;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
   }
 }

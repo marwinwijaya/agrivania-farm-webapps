@@ -43,12 +43,13 @@
 
         <header class="masthead hero-section">
             <div class="container px-4 px-lg-5">
-                <div class="row align-items-center gy-5">
+                <div class="row align-items-center gy-5 hero-row">
                     <div class="col-lg-6">
                         <div class="hero-copy reveal">
+                            <div class="hero-copy-panel">
                             <span class="eyebrow">Selada segar langsung dari farm</span>
-                            <h1 class="display-2 hero-title mb-4">Selada segar, renyah, dan siap kirim untuk kebutuhan rumah tangga sampai usaha kuliner.</h1>
-                            <p class="lead text-muted mb-4">
+                            <h1 class="display-2 hero-title mb-3">Selada segar, renyah, dan siap kirim untuk kebutuhan rumah tangga sampai usaha kuliner.</h1>
+                            <p class="lead text-muted hero-lead mb-4">
                                 Pesan selada langsung dari Agrivania Farm dengan harga terjangkau, kualitas terjaga, dan pilihan pembelian yang fleksibel: ecer, kiloan, hingga paket besar.
                             </p>
                             <div class="hero-price-strip mb-4">
@@ -56,7 +57,7 @@
                                 <span>Ecer <strong>Rp4.000/batang</strong></span>
                                 <span>Paket 10 kg <strong>Rp30.000/kg</strong></span>
                             </div>
-                            <div class="d-flex flex-column flex-sm-row gap-3">
+                            <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
                                 <a class="btn btn-primary btn-xl rounded-pill" href="https://wa.me/62895366034848?text=Halo%2C%20saya%20ingin%20pesan%20selada%20dari%20Agrivania%20Farm." target="_blank" rel="noopener noreferrer">
                                     <i class="bi-whatsapp me-2"></i>Pesan via WhatsApp
                                 </a>
@@ -67,10 +68,13 @@
                                 <div><i class="bi-basket2"></i> Bisa ecer & kiloan</div>
                                 <div><i class="bi-lightning-charge"></i> Respon cepat</div>
                             </div>
+                            <p class="hero-caption mb-0">Pilihan tepat untuk konsumsi harian, reseller, restoran, katering, dan usaha kuliner.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-visual reveal reveal-delay">
+                            <div class="hero-visual-frame"></div>
                             <div class="hero-image-card">
                                 <span class="hero-badge">Panen Pilihan</span>
                                 <img
@@ -410,18 +414,53 @@
 
         <footer class="site-footer py-5">
             <div class="container px-4 px-lg-5">
-                <div class="row gy-4 align-items-center">
-                    <div class="col-lg-5">
-                        <h3>Agrivania Farm</h3>
-                        <p class="mb-0">Selada segar, produk pertanian, dan kebutuhan hidroponik yang lebih mudah dipesan langsung dari sumbernya.</p>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="footer-links">
-                            <a href="https://wa.me/62895366034848?text=Halo%2C%20saya%20ingin%20tanya%20stok%20selada%20di%20Agrivania%20Farm." target="_blank" rel="noopener noreferrer"><i class="bi-whatsapp"></i> WhatsApp Agrivania Farm</a>
-                            <a href="https://www.tokopedia.com/agrivaniafarm" target="_blank" rel="noopener noreferrer"><i class="bi-bag"></i> Tokopedia</a>
-                            <a href="https://shopee.co.id/agrivaniafarm" target="_blank" rel="noopener noreferrer"><i class="bi-shop"></i> Shopee</a>
-                            <a href="https://maps.app.goo.gl/2Ua5kESGKF1eEkEcA" target="_blank" rel="noopener noreferrer"><i class="bi-geo-alt"></i> Google Maps</a>
+                <div class="footer-shell">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="footer-brand">
+                                <span class="footer-kicker">Start Bootstrap - New Age refined</span>
+                                <h3>Agrivania Farm</h3>
+                                <p>Selada segar, produk pertanian, dan kebutuhan hidroponik yang lebih mudah dipesan langsung dari sumbernya.</p>
+                                <div class="footer-badges">
+                                    <span><i class="bi-patch-check-fill"></i> Segar dari farm</span>
+                                    <span><i class="bi-lightning-charge-fill"></i> Respon cepat</span>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-sm-6 col-lg-2">
+                            <div class="footer-column">
+                                <h4>Menu Cepat</h4>
+                                <div class="footer-links footer-links-stack">
+                                    <a href="#tentang">Tentang</a>
+                                    <a href="#produk">Produk</a>
+                                    <a href="#galeri">Galeri</a>
+                                    <a href="#marketplace">Marketplace</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-column">
+                                <h4>Order & Marketplace</h4>
+                                <div class="footer-links footer-links-stack">
+                                    <a href="https://wa.me/62895366034848?text=Halo%2C%20saya%20ingin%20tanya%20stok%20selada%20di%20Agrivania%20Farm." target="_blank" rel="noopener noreferrer"><i class="bi-whatsapp"></i> WhatsApp</a>
+                                    <a href="https://www.tokopedia.com/agrivaniafarm" target="_blank" rel="noopener noreferrer"><i class="bi-bag"></i> Tokopedia</a>
+                                    <a href="https://shopee.co.id/agrivaniafarm" target="_blank" rel="noopener noreferrer"><i class="bi-shop"></i> Shopee</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-column">
+                                <h4>Kontak & Lokasi</h4>
+                                <div class="footer-contact">
+                                    <p>Siap bantu tanya stok, pengiriman, dan order dalam jumlah kecil maupun besar.</p>
+                                    <a href="https://maps.app.goo.gl/2Ua5kESGKF1eEkEcA" target="_blank" rel="noopener noreferrer"><i class="bi-geo-alt"></i> Lihat lokasi di Google Maps</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p class="mb-0">© Agrivania Farm. Selada segar langsung dari farm untuk kebutuhan rumah tangga dan usaha.</p>
+                        <a class="footer-bottom-link" href="https://wa.me/62895366034848?text=Halo%2C%20saya%20ingin%20pesan%20selada%20dari%20Agrivania%20Farm." target="_blank" rel="noopener noreferrer">Hubungi via WhatsApp</a>
                     </div>
                 </div>
             </div>
