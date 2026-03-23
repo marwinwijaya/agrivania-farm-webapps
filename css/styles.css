@@ -11498,6 +11498,8 @@ aside {
 .info-card,
 .market-card,
 .trust-card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 2rem 1.5rem;
   border-radius: 1.5rem;
@@ -11539,6 +11541,16 @@ aside {
 .market-card h3,
 .delivery-cta-card h3 {
   font-size: 1.5rem;
+}
+
+.info-card h3 {
+  min-height: 3.2rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.2;
+}
+
+.info-card p {
+  margin-bottom: 0;
 }
 
 .pricing-card {
