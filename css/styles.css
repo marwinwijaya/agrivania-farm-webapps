@@ -11401,6 +11401,7 @@ aside {
 
 .info-card,
 .pricing-card,
+.market-card,
 .trust-card,
 .delivery-cta-card,
 .gallery-modal-content,
@@ -11410,6 +11411,7 @@ aside {
 }
 
 .info-card,
+.market-card,
 .trust-card {
   height: 100%;
   padding: 2rem 1.5rem;
@@ -11432,6 +11434,7 @@ aside {
 
 .info-card h3,
 .pricing-card h3,
+.market-card h3,
 .delivery-cta-card h3 {
   font-size: 1.5rem;
 }
@@ -11518,6 +11521,33 @@ aside {
   color: #d5f1c8;
 }
 
+.market-card {
+  height: 100%;
+  padding: 2rem 1.6rem;
+  border-radius: 1.7rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.market-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.market-list li {
+  position: relative;
+  margin-bottom: 0.8rem;
+  padding-left: 1.6rem;
+}
+
+.market-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--farm-green);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -11582,9 +11612,10 @@ aside {
   font-weight: 800;
 }
 
-.video-file {
-  opacity: 0.82;
-  font-size: 0.85rem;
+.video-copy {
+  max-width: 18rem;
+  opacity: 0.9;
+  font-size: 0.92rem;
 }
 
 .gallery-overlay {
@@ -11606,6 +11637,7 @@ aside {
 .gallery-item,
 .info-card,
 .pricing-card,
+.market-card,
 .trust-card,
 .floating-wa,
 .final-cta-box {
@@ -11656,7 +11688,7 @@ aside {
 
 .final-cta {
   padding-top: 2rem;
-  padding-bottom: 5.5rem;
+  padding-bottom: 2rem;
 }
 
 .final-cta-box {
@@ -11665,6 +11697,29 @@ aside {
   background:
     radial-gradient(circle at top right, rgba(157, 187, 109, 0.24), transparent 20%),
     linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(242, 248, 238, 0.95));
+}
+
+.urgency-section {
+  padding-top: 2rem;
+  padding-bottom: 5.5rem;
+}
+
+.urgency-box {
+  padding: 2.25rem;
+  border-radius: 2rem;
+  color: #fff;
+  background:
+    radial-gradient(circle at top right, rgba(213, 241, 200, 0.16), transparent 20%),
+    linear-gradient(135deg, #214626, #2f7d32 70%, #5b9650);
+  box-shadow: 0 24px 50px rgba(35, 79, 40, 0.22);
+}
+
+.urgency-box h2 {
+  color: #fff;
+}
+
+.urgency-box p {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .site-footer {
@@ -11787,6 +11842,7 @@ aside {
   .delivery-panel,
   .final-cta-box,
   .pricing-card,
+  .market-card,
   .info-card,
   .trust-card {
     padding-left: 1.2rem;
