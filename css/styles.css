@@ -11432,6 +11432,18 @@ aside {
   font-size: 1.4rem;
 }
 
+.icon-wrap-brand {
+  background: #fff;
+  border: 1px solid rgba(47, 125, 50, 0.08);
+  box-shadow: 0 10px 20px rgba(35, 79, 40, 0.08);
+}
+
+.marketplace-logo {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: block;
+}
+
 .info-card h3,
 .pricing-card h3,
 .market-card h3,
