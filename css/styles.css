@@ -11653,15 +11653,28 @@ aside {
 }
 
 .market-card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 2rem 1.6rem;
   border-radius: 1.7rem;
   background: rgba(255, 255, 255, 0.92);
 }
 
+.market-card h3 {
+  min-height: 3.2rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.2;
+}
+
+.market-card > p {
+  min-height: 5rem;
+}
+
 .market-list {
   padding-left: 0;
   list-style: none;
+  margin-bottom: 1.5rem;
 }
 
 .market-list li {
@@ -11677,6 +11690,10 @@ aside {
   color: var(--farm-green);
   font-size: 1.3rem;
   line-height: 1;
+}
+
+.market-card .btn {
+  margin-top: auto;
 }
 
 .gallery-grid {
