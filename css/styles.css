@@ -11685,6 +11685,19 @@ aside {
   gap: 1rem;
 }
 
+.gallery-group-head {
+  max-width: 680px;
+}
+
+.gallery-group-head h3 {
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+}
+
+.gallery-grid-video {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .gallery-item {
   position: relative;
   overflow: hidden;
@@ -12006,6 +12019,10 @@ aside {
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .gallery-grid-video {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 992px) {
@@ -12016,6 +12033,11 @@ aside {
 
   .gallery-item.tall {
     grid-row: span 2;
+  }
+
+  .gallery-grid-video {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(240px, auto);
   }
 }
 
